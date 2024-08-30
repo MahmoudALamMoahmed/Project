@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Main Template Css File -->
+    <link rel="stylesheet" href="Css/style.css"> 
+    <!-- Font awesome Library -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="Css/normalize.css">
+    <!-- JQuery -->
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid ps-5">
+      <div class="logo" style="display: flex;align-items: center; cursor: pointer;">
+        <img src="images/logo.png" width="70" height="70" alt="">
+        <a class="navbar-brand fw-bold fs-2" href="#">noon</a>
+      </div> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav pe-5 ">
+          <li class="nav-item fs-5 pe-2 d-flex align-items-center">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <i class="fa-solid fa-house-chimney"></i>
+            <div class="sc-ce86c11a-3 hxgeim"></div>
+          </li>
+          <li class="nav-item fs-5 pe-2 d-flex align-items-center">
+            <a class="nav-link" href="login.html"> Login </a>
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <div class="sc-ce86c11a-3 hxgeim"></div>
+          </li>
+          <li class="nav-item fs-5 pe-2 d-flex align-items-center signup-disappear">
+            <a class="nav-link" href="register.html"> Sign Up </a>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <div class="sc-ce86c11a-3 hxgeim"></div>
+          </li>
+          <li class="nav-item fs-5 pe-2 d-flex align-items-center">
+            <a class="nav-link" href="#">WishList </a>
+            <i class="fa-regular fa-heart"></i>
+            <div class="sc-ce86c11a-3 hxgeim"></div>
+          </li>
+          <li class="nav-item fs-5 pe-2 d-flex align-items-center">
+            <a class="nav-link" href="#">Cart</a>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+   <!-- Start Login -->
+    <div class="container">
+        <form class="col-12 rounded-4 bg-warning" style="padding: 20px;width: 35%;margin:130px auto;">
+            <div class="col-12 text-center">
+              <div class="alert alert-danger alertloginusername" role="alert">
+                UserNAme Or Pass is Wrong
+              </div>
+              <div class="alert alert-primary text-center alertusernamegood" role="alert">
+                You have successfully logged in !!
+              </div>
+            <label for="username" class="form-label fs-1" >Login</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Your User Name">
+            
+            </div>
+            <div class="col-12 mt-4">
+            <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+            </div>
+            
+            <div class="col-12 mt-4 text-center">
+            <button type="submit" class="btn btn-info fs-4 login">Login</button>
+            <a class="ms-4" href="register.html">I don't have an account</a>
+            </div>
+        </form>
+    </div>
+    <!-- End Login -->
+     <!-- Start Footer -->
+<footer class="" style="background-color: gold;height: 70px;text-align: center;line-height: 70px;">
+  <p style="font-size: 20px;">© 2024 noon. All Rights Reserved</p>
+  </footer>
+  <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
